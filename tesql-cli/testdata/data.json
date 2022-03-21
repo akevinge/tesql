@@ -1,0 +1,51 @@
+{
+  "data": {
+    "user": {
+      "columns": [
+        { "name": "id", "type": "uuid" },
+        { "name": "username", "type": "text" },
+        { "name": "is_student", "type": "text" },
+        { "name": "friends_ids", "type": "array" },
+        { "name": "nested_arrays", "type": "array" }
+      ],
+      "inserts": [
+        {
+          "id": "0101111111111",
+          "username": "Bob",
+          "is_student": true,
+          "friends_ids": ["hello", "world", "hi!"],
+          "nested_arrays": [
+            ["hey", "man"],
+            ["the", "world", "goes", "round"]
+          ]
+        },
+        {
+          "id": "2",
+          "username": "Bob2",
+          "is_student": false,
+          "friends_ids": ["hi", "mom"],
+          "nested_arrays": [["hello", "there"], ["hello", "world"], ["hi!"]]
+        }
+      ]
+    },
+    "user1": {
+      "columns": [
+        { "name": "id", "type": "uuid" },
+        { "name": "username", "type": "text" },
+        { "name": "bool", "type": "text" }
+      ],
+      "inserts": [
+        {
+          "id": "0101",
+          "username": "Bob",
+          "bool": true
+        },
+        {
+          "id": "2",
+          "username": "Bob2",
+          "bool": false
+        }
+      ]
+    }
+  }
+}
